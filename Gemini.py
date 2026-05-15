@@ -1,11 +1,12 @@
+import google-generativeai as genai
 import requests
-import streamlit
+import streamlit as st
 # Configura a API Key do Google Gemini e grava em uma variável de ambiente
 
 import os
 from google.colab import userdata
 
-chave = st.secret.get('GeminiAPIKey')
+genai.configure(api_key=st.secrets['GeminiAPIKey'])
 
 # Configura o cliente da SDK do Gemini
 
