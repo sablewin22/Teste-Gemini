@@ -1,5 +1,5 @@
-!pip install google-genai
-
+import requests
+import streamlit
 # Configura a API Key do Google Gemini e grava em uma variável de ambiente
 
 import os
