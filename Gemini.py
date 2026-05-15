@@ -15,7 +15,7 @@ MODEL_ID = "gemini-2.5-flash"
 model = genai.GenerativeModel(MODEL_ID)
 
 resposta = model.generate_content(
-    contents='Explique como ocorreu o 7 x 1 na copa de 2014 entre Brasil e Alemanha',
+    contents= st.text_input('Digite sua pergunta'),
 )
 # Exibe a resposta na tela
 st.write(f"Resposta:\n {resposta.text}")
