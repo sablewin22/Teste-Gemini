@@ -1,4 +1,3 @@
-import google-generativeai as genai
 import requests
 import streamlit as st
 # Configura a API Key do Google Gemini e grava em uma variável de ambiente
