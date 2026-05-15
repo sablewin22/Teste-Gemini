@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 # Configura a API Key do Google Gemini e grava em uma variável de ambiente
 
-genai.configure(api_key=st.secrets['GeminiAPIKey'])
+genai.configure(api_key=st.secrets['GEMINI_API_KEY'])
 
 # Configura o cliente da SDK do Gemini
 
