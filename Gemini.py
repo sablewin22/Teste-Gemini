@@ -11,13 +11,7 @@ import google.generativeai as genai
 
 MODEL_ID = "gemini-2.5-flash"
 
-for m in genai.list_models():
-  if 'generateContent' in m.supported_generation_methods:
-    print(m.name)
-
 # Pergunta ao Gemini uma informação mais recente que seu conhecimento
-
-from IPython.display import HTML, Markdown
 
 model = genai.GenerativeModel(MODEL_ID)
 
@@ -25,4 +19,4 @@ resposta = model.generate_content(
     contents='Explique como ocorreu o 7 x 1 na copa de 2014 entre Brasil e Alemanha',
 )
 # Exibe a resposta na tela
-display(Markdown(f"Resposta:\n {resposta.text}"))
+st.write(f"Resposta:\n {resposta.text}")
